@@ -10,7 +10,7 @@ function page() {
       <Profile />
       <Search />
       <TabCarousel />
-      <Menu />
+      {/* <Menu /> */}
     </>
   );
 }
