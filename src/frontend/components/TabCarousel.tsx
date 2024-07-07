@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
+import AllTabContent from "./AllTabContent";
+import AdventuresTanContent from "./AdventuresTanContent";
+import CavesTabContent from "./CavesTabContent";
 
 const ActiveButColor =
   "linear-gradient(142deg, rgba(16,69,91,1) 0%, rgba(69,146,164,1) 92%, rgba(100,163,177,1) 100%);";
@@ -172,9 +175,15 @@ function TabCarousel() {
           Test4
         </Test4TabEl>
       </TabsEl>
-      <AllTabContentEl>im ALL TAB ELS</AllTabContentEl>
-      <AdventuresTabContentEl>im adventues TAB ELS</AdventuresTabContentEl>
-      <CavesTabContentEl>im caves TAB ELS</CavesTabContentEl>
+      <AllTabContentEl>
+        <AllTabContent />
+      </AllTabContentEl>
+      <AdventuresTabContentEl>
+        <AdventuresTanContent />
+      </AdventuresTabContentEl>
+      <CavesTabContentEl>
+        <CavesTabContent />
+      </CavesTabContentEl>
       <Test1TabContentEl>im test1 TAB ELS</Test1TabContentEl>
       <Test2TabContentEl>im test2 TAB ELS</Test2TabContentEl>
       <Test3TabContentEl>im test3 TAB ELS</Test3TabContentEl>

@@ -8,12 +8,12 @@ import Image from "next/image";
 const ContainerEl = styled(Row)`
   width: 360px;
   justify-content: center;
-  background-color: rebeccapurple;
+  /*   background-color: rebeccapurple; */
 `;
 const ContentEl = styled(Row)`
   gap: 10px;
   width: calc(100% - 30px);
-  background-color: red;
+  /*   background-color: red; */
 `;
 const SearchEl = styled.input.attrs({
   type: "search",

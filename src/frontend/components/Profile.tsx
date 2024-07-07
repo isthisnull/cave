@@ -9,12 +9,12 @@ import Image from "next/image";
 const ContainerEl = styled(Row)`
   width: 360px;
   justify-content: center;
-  background-color: rebeccapurple;
+  /*   background-color: rebeccapurple; */
 `;
 const ProfileEl = styled(Row)`
   width: calc(100% - 30px);
   justify-content: space-between;
-  background-color: red;
+  /*   background-color: red; */
 `;
 const AvatarEl = styled(Row)``;
 const InfoEl = styled(Row)`
