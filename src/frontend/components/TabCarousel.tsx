@@ -7,6 +7,7 @@ import Image from "next/image";
 import AllTabContent from "./AllTabContent";
 import AdventuresTanContent from "./AdventuresTanContent";
 import CavesTabContent from "./CavesTabContent";
+import Menu from "./Menu";
 
 const ActiveButColor =
   "linear-gradient(142deg, rgba(16,69,91,1) 0%, rgba(69,146,164,1) 92%, rgba(100,163,177,1) 100%);";
@@ -20,15 +21,12 @@ const ContainerEl = styled(Row)`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /*   background-color: violet; */
 `;
 
 const TabsEl = styled(Row)`
   overflow: auto hidden;
   width: 100%;
-  /* scrollbar-color: #ffffff #ffffff; */
   padding-left: 15px;
-  /*   background-color: red; */
   gap: 6px;
   font-size: 0.7rem;
   font-weight: 700;
@@ -188,6 +186,7 @@ function TabCarousel() {
       <Test2TabContentEl>im test2 TAB ELS</Test2TabContentEl>
       <Test3TabContentEl>im test3 TAB ELS</Test3TabContentEl>
       <Test4TabContentEl>im test4 TAB ELS</Test4TabContentEl>
+      <Menu />
     </ContainerEl>
   );
 }

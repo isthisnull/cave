@@ -23,7 +23,7 @@ const InfoEl = styled(Row)`
 const HelloEl = styled(Row)``;
 const NameEl = styled(Row)``;
 const BellEl = styled(Row)``;
-function Profile() {
+export default function Profile() {
   return (
     <ContainerEl>
       <ProfileEl>
@@ -37,5 +37,3 @@ function Profile() {
     </ContainerEl>
   );
 }
-
-export default Profile;
