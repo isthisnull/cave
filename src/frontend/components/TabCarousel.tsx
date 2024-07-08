@@ -8,6 +8,8 @@ import AllTabContent from "./AllTabContent";
 import AdventuresTanContent from "./AdventuresTanContent";
 import CavesTabContent from "./CavesTabContent";
 import Menu from "./Menu";
+import Profile from "./Profile";
+import Search from "./Search";
 
 const ActiveButColor =
   "linear-gradient(142deg, rgba(16,69,91,1) 0%, rgba(69,146,164,1) 92%, rgba(100,163,177,1) 100%);";
@@ -27,7 +29,7 @@ const TabsEl = styled(Row)`
   overflow: auto hidden;
   width: 100%;
   padding-left: 15px;
-  gap: 6px;
+  gap: 8px;
   font-size: 0.7rem;
   font-weight: 700;
 `;
@@ -39,7 +41,7 @@ function TabCarousel() {
     border-radius: 9px;
     cursor: pointer;
     background: ${tab === "all" ? `${ActiveButColor}` : `${NonActiveButColor}`};
-    padding: 9px 16px;
+    padding: 11px 20px;
     color: ${tab === "all" ? `${ActiveFontColor}` : `${NonActiveFontColor}`};
   `;
   const AdventuresTabEl = styled(Row)`
@@ -48,7 +50,7 @@ function TabCarousel() {
     background: ${tab === "adventures"
       ? `${ActiveButColor}`
       : `${NonActiveButColor}`};
-    padding: 9px 16px;
+    padding: 11px 20px;
     color: ${tab === "adventures"
       ? `${ActiveFontColor}`
       : `${NonActiveFontColor}`};
@@ -59,7 +61,7 @@ function TabCarousel() {
     background: ${tab === "caves"
       ? `${ActiveButColor}`
       : `${NonActiveButColor}`};
-    padding: 9px 16px;
+    padding: 11px 20px;
     color: ${tab === "caves" ? `${ActiveFontColor}` : `${NonActiveFontColor}`};
   `;
   const Test1TabEl = styled(Row)`
@@ -68,7 +70,7 @@ function TabCarousel() {
     background: ${tab === "test1"
       ? `${ActiveButColor}`
       : `${NonActiveButColor}`};
-    padding: 9px 16px;
+    padding: 11px 20px;
     color: ${tab === "test1" ? `${ActiveFontColor}` : `${NonActiveFontColor}`};
   `;
   const Test2TabEl = styled(Row)`
@@ -77,7 +79,7 @@ function TabCarousel() {
     background: ${tab === "test2"
       ? `${ActiveButColor}`
       : `${NonActiveButColor}`};
-    padding: 9px 16px;
+    padding: 11px 20px;
     color: ${tab === "test2" ? `${ActiveFontColor}` : `${NonActiveFontColor}`};
   `;
   const Test3TabEl = styled(Row)`
@@ -86,7 +88,7 @@ function TabCarousel() {
     background: ${tab === "test3"
       ? `${ActiveButColor}`
       : `${NonActiveButColor}`};
-    padding: 9px 16px;
+    padding: 11px 20px;
     color: ${tab === "test3" ? `${ActiveFontColor}` : `${NonActiveFontColor}`};
   `;
   const Test4TabEl = styled(Row)`
@@ -95,7 +97,7 @@ function TabCarousel() {
     background: ${tab === "test4"
       ? `${ActiveButColor}`
       : `${NonActiveButColor}`};
-    padding: 9px 16px;
+    padding: 11px 20px;
     color: ${tab === "test4" ? `${ActiveFontColor}` : `${NonActiveFontColor}`};
   `;
   const AllTabContentEl = styled(Row)`
@@ -121,73 +123,77 @@ function TabCarousel() {
   `;
 
   return (
-    <ContainerEl>
-      <TabsEl>
-        <AllTabEl
-          onClick={() => {
-            setTab("all");
-          }}
-        >
-          All
-        </AllTabEl>
-        <AdventuresTabEl
-          onClick={() => {
-            setTab("adventures");
-          }}
-        >
-          Adventures
-        </AdventuresTabEl>
-        <CavesTabEl
-          onClick={() => {
-            setTab("caves");
-          }}
-        >
-          Caves
-        </CavesTabEl>
-        <Test1TabEl
-          onClick={() => {
-            setTab("test1");
-          }}
-        >
-          Test1
-        </Test1TabEl>
-        <Test2TabEl
-          onClick={() => {
-            setTab("test2");
-          }}
-        >
-          Test2
-        </Test2TabEl>
-        <Test3TabEl
-          onClick={() => {
-            setTab("test3");
-          }}
-        >
-          Test3
-        </Test3TabEl>
-        <Test4TabEl
-          onClick={() => {
-            setTab("test4");
-          }}
-        >
-          Test4
-        </Test4TabEl>
-      </TabsEl>
-      <AllTabContentEl>
-        <AllTabContent />
-      </AllTabContentEl>
-      <AdventuresTabContentEl>
-        <AdventuresTanContent />
-      </AdventuresTabContentEl>
-      <CavesTabContentEl>
-        <CavesTabContent />
-      </CavesTabContentEl>
-      <Test1TabContentEl>im test1 TAB ELS</Test1TabContentEl>
-      <Test2TabContentEl>im test2 TAB ELS</Test2TabContentEl>
-      <Test3TabContentEl>im test3 TAB ELS</Test3TabContentEl>
-      <Test4TabContentEl>im test4 TAB ELS</Test4TabContentEl>
-      <Menu />
-    </ContainerEl>
+    <>
+      <Profile />
+      <Search />
+      <ContainerEl>
+        <TabsEl>
+          <AllTabEl
+            onClick={() => {
+              setTab("all");
+            }}
+          >
+            All
+          </AllTabEl>
+          <AdventuresTabEl
+            onClick={() => {
+              setTab("adventures");
+            }}
+          >
+            Adventures
+          </AdventuresTabEl>
+          <CavesTabEl
+            onClick={() => {
+              setTab("caves");
+            }}
+          >
+            Caves
+          </CavesTabEl>
+          <Test1TabEl
+            onClick={() => {
+              setTab("test1");
+            }}
+          >
+            Test1
+          </Test1TabEl>
+          <Test2TabEl
+            onClick={() => {
+              setTab("test2");
+            }}
+          >
+            Test2
+          </Test2TabEl>
+          <Test3TabEl
+            onClick={() => {
+              setTab("test3");
+            }}
+          >
+            Test3
+          </Test3TabEl>
+          <Test4TabEl
+            onClick={() => {
+              setTab("test4");
+            }}
+          >
+            Test4
+          </Test4TabEl>
+        </TabsEl>
+        <AllTabContentEl>
+          <AllTabContent />
+        </AllTabContentEl>
+        <AdventuresTabContentEl>
+          <AdventuresTanContent />
+        </AdventuresTabContentEl>
+        <CavesTabContentEl>
+          <CavesTabContent />
+        </CavesTabContentEl>
+        <Test1TabContentEl>im test1 TAB ELS</Test1TabContentEl>
+        <Test2TabContentEl>im test2 TAB ELS</Test2TabContentEl>
+        <Test3TabContentEl>im test3 TAB ELS</Test3TabContentEl>
+        <Test4TabContentEl>im test4 TAB ELS</Test4TabContentEl>
+        <Menu />
+      </ContainerEl>
+    </>
   );
 }
 
