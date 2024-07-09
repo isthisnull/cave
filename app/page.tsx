@@ -7,10 +7,10 @@ import Menu from "@/src/frontend/components/Menu";
 function page() {
   return (
     <>
-      {/* <Profile /> */}
-      {/* <Search /> */}
+      {/*    <Profile />
+      <Search /> */}
       <TabCarousel />
-      {/* <Menu /> */}
+      {/*      <Menu /> */}
     </>
   );
 }

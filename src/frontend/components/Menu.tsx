@@ -2,17 +2,13 @@
 import Row from "@/src/frontend/components/common/Row";
 import React, { useState } from "react";
 import styled from "styled-components";
-import Link from "next/link";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
   faMagnifyingGlass,
   faBookmark,
   faUser,
-  faUnderline,
 } from "@fortawesome/free-solid-svg-icons";
-import { text } from "stream/consumers";
 
 const ContainerEl = styled(Row)`
   height: 50px;
@@ -20,7 +16,10 @@ const ContainerEl = styled(Row)`
   position: fixed;
   bottom: 0px;
   justify-content: center;
-  /*   background-color: aqua; */
+  background-color: white;
+  @media (max-width: 391px) {
+    width: 390px;
+  }
 `;
 
 const MenuEl = styled(Row)`
@@ -30,32 +29,28 @@ const MenuEl = styled(Row)`
   gap: 20px;
   justify-content: space-around;
   align-items: center;
-  /*   background-color: black; */
 `;
 
 const HomeEl = styled(Row)`
   justify-content: center;
   align-items: center;
-  /*   background-color: red; */
+
   padding: 0px 14px;
 `;
 const SearchEl = styled(Row)`
   justify-content: center;
   align-items: center;
-  /*  background-color: brown; */
   padding: 0px 14px;
 `;
 const BookmarkEl = styled(Row)`
   justify-content: center;
   align-items: center;
-  /*  background-color: tan; */
   padding: 0px 14px;
 `;
 
 const ProfileEl = styled(Row)`
   justify-content: center;
   align-items: center;
-  /*  background-color: gold; */
   padding: 0px 14px;
 `;
 

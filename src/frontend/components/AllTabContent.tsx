@@ -11,13 +11,14 @@ const ContainerEl = styled(Row)`
   margin-top: 15px;
   width: 360px;
   justify-content: center;
-  /*   background-color: rebeccapurple; */
   flex-direction: column;
   align-items: center;
+  @media (max-width: 391px) {
+    width: 390px;
+  }
 `;
 const RecEl = styled(Row)`
   width: calc(100% - 30px);
-  /*   background-color: red; */
   justify-content: space-between;
 `;
 const RecTextEl = styled(Row)`
@@ -32,11 +33,11 @@ const SeeAllButEl = styled.button`
 const ImageEl = styled(Row)`
   margin-top: 20px;
   width: calc(100% - 30px);
-  /*   background-color: cadetblue; */
   position: relative;
   border-radius: 30px;
   overflow: hidden;
 `;
+const LinkEl = styled(Row)``;
 const BookmarkButEl = styled.button`
   position: absolute;
   right: 12px;
@@ -123,13 +124,17 @@ function AllTabContent() {
           <PriceStartEl>Starting at</PriceStartEl>
           <PriceEl>$200</PriceEl>
         </PriceConEl>
-        <Image
-          src={"/assets/2.jpg"}
-          width={360}
-          height={450}
-          style={{ objectFit: "cover" }}
-          alt="cave"
-        ></Image>
+        <LinkEl>
+          <Link href={"./cave"}>
+            <Image
+              src={"/assets/2.jpg"}
+              width={360}
+              height={450}
+              style={{ objectFit: "cover" }}
+              alt="cave"
+            ></Image>
+          </Link>
+        </LinkEl>
       </ImageEl>
     </ContainerEl>
   );

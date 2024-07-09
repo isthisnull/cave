@@ -2,13 +2,15 @@
 import Row from "@/src/frontend/components/common/Row";
 import React, { useState } from "react";
 import styled from "styled-components";
-import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell, faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 const ContainerEl = styled(Row)`
   width: 360px;
   justify-content: center;
+  @media (max-width: 391px) {
+    width: 390px;
+  }
 `;
 const ProfileEl = styled(Row)`
   margin-top: 2px;
@@ -21,7 +23,6 @@ const AvatarEl = styled(Row)``;
 const InfoEl = styled(Row)`
   flex-direction: column;
   padding-right: 170px;
-  /*   background-color: red; */
   gap: 2px;
 `;
 const HelloEl = styled(Row)`
