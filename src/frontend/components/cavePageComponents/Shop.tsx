@@ -13,6 +13,7 @@ import {
 
 const ContainerEl = styled(Row)`
   width: 360px;
+  margin-bottom: 60px;
   justify-content: center;
   @media (min-width: 319px) {
     width: 320px;
@@ -107,7 +108,6 @@ const CounterConEl = styled(Row)`
   align-items: center;
 `;
 const BookConEl = styled(Row)`
-  margin-top: 40px;
   justify-content: space-between;
 `;
 const PriceConEl = styled(Row)`
@@ -129,7 +129,7 @@ const TravelerEl = styled(Row)`
   margin-bottom: 30px;
   position: relative;
   width: 100%;
-  height: 20px;
+  height: 60px;
 `;
 
 const T1El = styled(Row)`
@@ -179,7 +179,12 @@ const BookNowButEl = styled.button`
   border-radius: 15px;
   font-weight: 600;
   background-color: black;
+  @media (min-width: 319px) {
+    padding: 15px 45px;
+    font-size: 1rem;
+  }
 `;
+
 export default function Shop() {
   const [inputvalue, setInputvalue] = useState(0);
   const handleInputChange = (e: any) => {
