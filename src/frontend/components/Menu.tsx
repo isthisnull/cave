@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const ContainerEl = styled(Row)`
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   height: 50px;
   width: 360px;
   position: fixed;
