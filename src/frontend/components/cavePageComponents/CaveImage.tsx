@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import Shop from "./Shop";
 
 const ContainerEl = styled(Row)`
   margin-top: 15px;
@@ -13,6 +14,21 @@ const ContainerEl = styled(Row)`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 319px) {
+    width: 320px;
+  }
+  @media (min-width: 374px) {
+    width: 375px;
+  }
+  @media (min-width: 411px) {
+    width: 412px;
+  }
+  @media (min-width: 424px) {
+    width: 425px;
+  }
+  @media (min-width: 767px) {
+    width: 768px;
+  }
 `;
 
 const ImageEl = styled(Row)`
@@ -21,6 +37,12 @@ const ImageEl = styled(Row)`
   position: relative;
   border-radius: 30px;
   overflow: hidden;
+  @media (min-width: 424px) {
+    width: calc(100% - 30px);
+  }
+  @media (min-width: 767px) {
+    width: 400px;
+  }
 `;
 
 const TagEl = styled(Row)`
@@ -99,14 +121,16 @@ export default function CaveImage() {
           <PriceStartEl>Ice Caves</PriceStartEl>
           <PriceEl>$400</PriceEl>
         </PriceConEl>
+
         <Image
           src={"/assets/2.jpg"}
-          width={360}
+          width={400}
           height={400}
           style={{ objectFit: "cover" }}
           alt="cave"
         ></Image>
       </ImageEl>
+      <Shop />
     </ContainerEl>
   );
 }

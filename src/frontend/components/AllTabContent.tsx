@@ -13,8 +13,20 @@ const ContainerEl = styled(Row)`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 391px) {
-    width: 390px;
+  @media (min-width: 319px) {
+    width: 320px;
+  }
+  @media (min-width: 374px) {
+    width: 375px;
+  }
+  @media (min-width: 411px) {
+    width: 412px;
+  }
+  @media (min-width: 424px) {
+    width: 425px;
+  }
+  @media (min-width: 767px) {
+    width: 768px;
   }
 `;
 const RecEl = styled(Row)`
@@ -31,11 +43,20 @@ const SeeAllButEl = styled.button`
   color: rgba(155, 155, 155, 0.7);
 `;
 const ImageEl = styled(Row)`
+  margin-bottom: 100px;
   margin-top: 20px;
   width: calc(100% - 30px);
   position: relative;
   border-radius: 30px;
   overflow: hidden;
+  height: 445px;
+
+  @media (min-width: 424px) {
+    width: calc(100% - 30px);
+  }
+  @media (min-width: 767px) {
+    width: 400px;
+  }
 `;
 const LinkEl = styled(Row)``;
 const BookmarkButEl = styled.button`
@@ -128,7 +149,7 @@ function AllTabContent() {
           <Link href={"./cave"}>
             <Image
               src={"/assets/2.jpg"}
-              width={360}
+              width={400}
               height={450}
               style={{ objectFit: "cover" }}
               alt="cave"

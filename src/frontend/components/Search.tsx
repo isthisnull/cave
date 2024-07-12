@@ -2,15 +2,27 @@
 import Row from "@/src/frontend/components/common/Row";
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const ContainerEl = styled(Row)`
   width: 360px;
   justify-content: center;
   margin-bottom: 20px;
+  @media (min-width: 319px) {
+    width: 320px;
+  }
+  @media (min-width: 374px) {
+    width: 375px;
+  }
+  @media (min-width: 411px) {
+    width: 412px;
+  }
+  @media (min-width: 424px) {
+    width: 425px;
+  }
+  @media (min-width: 767px) {
+    width: 768px;
+  }
 `;
 const ContentEl = styled(Row)`
   gap: 10px;

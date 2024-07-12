@@ -14,8 +14,20 @@ import {
 const ContainerEl = styled(Row)`
   width: 360px;
   justify-content: center;
-  @media (max-width: 391px) {
-    width: 390px;
+  @media (min-width: 319px) {
+    width: 320px;
+  }
+  @media (min-width: 374px) {
+    width: 375px;
+  }
+  @media (min-width: 411px) {
+    width: 412px;
+  }
+  @media (min-width: 424px) {
+    width: 425px;
+  }
+  @media (min-width: 767px) {
+    width: 768px;
   }
 `;
 const SecConEl = styled(Row)`

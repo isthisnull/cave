@@ -8,14 +8,38 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 const ContainerEl = styled(Row)`
   width: 360px;
   justify-content: center;
-  @media (max-width: 391px) {
-    width: 390px;
+  @media (min-width: 319px) {
+    width: 320px;
+  }
+  @media (min-width: 374px) {
+    width: 375px;
+  }
+  @media (min-width: 424px) {
+    width: 425px;
+  }
+  @media (min-width: 767px) {
+    width: 768px;
   }
 `;
 const ProfileEl = styled(Row)`
   margin-top: 2px;
   margin-bottom: 30px;
   width: calc(100% - 30px);
+  @media (min-width: 319px) {
+    width: calc(100% - 35px);
+  }
+  @media (min-width: 374px) {
+    width: calc(100% - 30px);
+  }
+  @media (min-width: 411px) {
+    width: calc(100% - 10px);
+  }
+  @media (min-width: 424px) {
+    width: calc(100% - 30px);
+  }
+  @media (min-width: 767px) {
+    width: calc(100% - 30px);
+  }
   justify-content: space-between;
   align-items: center;
 `;
@@ -23,6 +47,21 @@ const AvatarEl = styled(Row)``;
 const InfoEl = styled(Row)`
   flex-direction: column;
   padding-right: 170px;
+  @media (min-width: 319px) {
+    padding-right: 150px;
+  }
+  @media (min-width: 374px) {
+    padding-right: 170px;
+  }
+  @media (min-width: 411px) {
+    padding-right: 210px;
+  }
+  @media (min-width: 424px) {
+    padding-right: 210px;
+  }
+  @media (min-width: 767px) {
+    padding-right: 550px;
+  }
   gap: 2px;
 `;
 const HelloEl = styled(Row)`

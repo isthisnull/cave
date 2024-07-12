@@ -16,9 +16,21 @@ const ContainerEl = styled(Row)`
   position: fixed;
   bottom: 0px;
   justify-content: center;
-  background-color: white;
-  @media (max-width: 391px) {
-    width: 390px;
+  background-color: #ffffff;
+  @media (min-width: 319px) {
+    width: 320px;
+  }
+  @media (min-width: 374px) {
+    width: 375px;
+  }
+  @media (min-width: 411px) {
+    width: 412px;
+  }
+  @media (min-width: 424px) {
+    width: 425px;
+  }
+  @media (min-width: 767px) {
+    width: 768px;
   }
 `;
 
@@ -29,12 +41,36 @@ const MenuEl = styled(Row)`
   gap: 20px;
   justify-content: space-around;
   align-items: center;
+  @media (min-width: 319px) {
+    width: 320px;
+    max-width: 310px;
+    gap: 5px;
+  }
+  @media (min-width: 374px) {
+    width: 375px;
+    max-width: 360px;
+    gap: 15px;
+  }
+  @media (min-width: 411px) {
+    width: 412px;
+    max-width: 400px;
+    gap: 17px;
+  }
+  @media (min-width: 424px) {
+    width: 425px;
+    max-width: 420px;
+    gap: 20px;
+  }
+  @media (min-width: 767px) {
+    width: 768px;
+    max-width: 750px;
+    gap: 20px;
+  }
 `;
 
 const HomeEl = styled(Row)`
   justify-content: center;
   align-items: center;
-
   padding: 0px 14px;
 `;
 const SearchEl = styled(Row)`
@@ -60,7 +96,7 @@ const GEl = styled(Row)`
   justify-content: center;
   color: white;
   background-color: black;
-  padding: 10px 15px;
+  padding: calc(10px + 1vw) calc(15px + 2vw);
   border-radius: 10px;
 `;
 export default function Menu() {
